@@ -1,26 +1,58 @@
-#title {
-    background-color: tomato;
-    text-align: center;
-    font-family: "Arial";
-}
-body {
-    background-color: papayawhip;
-}
-form {
-    text-align: center;
-}
-button {
-    font-size: 20px;
-    background-color:rgba(30, 109, 255, 0.822);
-}
-button:hover {
-    background-color: dodgerblue;
-}
-#div2 {
-    padding: 200px;
-}
-#div3 {
-    background-color: gainsboro;
-    font-size: large;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
+html {
+    background-color: #41b3a3;
+    font-family: Poppins, Arial;
+    color: white;
+}
+
+#title {
+    display: grid;
+    place-items: center;
+    height: 130px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#content {
+    display: grid;
+    place-items: center;
+    background-color: #e27d60;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+figcaption {
+    text-align: center;
+}
+
+#tribute-info {
+    width: 50%;
+}
+
+a {
+    color: gainsboro;
+}
+
+@media(max-width: 1000px) {
+    #image {
+        width: 400px;
+    }
+    #tribute-info {
+        width: 90%;
+        padding: 0 10px;
+    }
 }
