@@ -5,61 +5,119 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="main">
-  <div id="title">
-    <h1>Dr. Tilahun Gessesse</h1>
-    <h4><em>"The man who revolutionised modern music"</em>
-  </div>
-        
-<div id="content">
-  <figure id="img-div">
-    <img id="image" src="https://i.pinimg.com/originals/e0/23/c6/e023c63adb84179dd9959fde3fa2c0a6.jpg" alt="A picture of Tilahun Gessesse">
-    <figcaption id="img-caption">
-              A picture of Tilahun Gessesse
-    </figcaption>
-  </figure>
+       <main id="main-doc">
+  
+  <section id="Introduction" class="main-section">
+    <header>Introduction</header>
+    <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.</p>
+    <p>Python is a programming language that lets you work quickly and integrate systems more efficiently.</p>
+    <p>There are two major Python versions:</p>
+    <ul>
+      <li>Python 2</li>
+      <li>Python 3</li>
+    </ul>
+    <pre>
+    <code>
+    # The simplest python code
       
-  <div id="tribute-info">
-    <h2>Early years</h2>
+    print("Hello World")
+      
+    # Prints Hello World to the console.
+    </code>
+    </pre>
+  </section>
+  
+  <section id="Variables" class="main-section">
+    <header>Variables</header>
+    <p>Python is not “statically typed”. We do not need to declare variables before using them or declare their type. A variable is created the moment we first assign a value to it. A variable is a name given to a memory location. It is the basic unit of storage in a program.</p>
+    <p>Rules for creating variables in Python:</p>
     <ul>
-      <li>Tilahun Gessesse was born in Addis Ababa on September 27, 1940, to an Amhara father, Gessesse Negusse, and an Oromo mother, Gete Gurmu.</li>
-              
-      <li>Tilahun went to Waliso's Ras Gobena Elementary School, where his grandfather was a teacher.</li>
-              
-      <li>His enthusiasm in music grew stronger over time, despite his grandfather's encouragement to focus on his academic pursuits.</li>
-              
-      <li>Tilahun walked out of school and attempted to travel to Addis Ababa to pursue his career, a voyage he embarked on without the permission of his family.</li>
-              
-      <li>He only stayed at his grandfather's residence for one night before continuing his trek to Addis Ababa, this time hiding in the back of a heavy truck.</li>
+      <li>A variable name must start with a letter or the underscore character.</li>
+      <li>A variable name cannot start with a number.</li>
+      <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).</li>
+      <li>Variable names are case-sensitive (name, Name and NAME are three different variables).</li>
+      <li>The reserved words(keywords) cannot be used naming the variable.</li>
     </ul>
-    <h2>Achievements and career</h2>
-    <ul>
-      <li>Tilahun was engaged by the Hager Fikir Association, which is today known as Hager Fikir Theatre, in Addis Ababa.</li>
-              
-      <li>Tilahun moved to the National Theater, where he continued to have success. In the 1960s, his tenor singing was recognized as the best Ethiopian pop voice.</li>
-              
-      <li>Tilahun's recordings from the 1970s and 1980s helped earn enormous sums of money for famine relief. His recordings were mostly in Amharic, but he did make a few in Oromo as well.</li>
-              
-      <li>Since 1983, when partnering with The Walias, they have worked together to re-record older versions of LPs under Misrach Music Group.</li>
-              
-      <li>He was awarded an Honorary Doctorate Degree by Addis Ababa University. He was also honored by the Ethiopian Fine Art and Mass Media Prize Trust for his lifetime achievements.</li>
-    </ul>
-    <h2>Death and funeral</h2>
-    <ul>
-      <li>Tilahun died in Addis Ababa on April 19, 2009, while being driven to the hospital by his wife.</li>
-              
-      <li>Due to diabetes, he had been in bad health for several years.</li>
-              
-      <li>"Tilahun distinguished out as an artist of great fame with his lifelong contributions to Ethiopia's modern music, which he popularized across the world," Ethiopian Prime Minister Meles Zenawi said.</li>
+    <pre>
+    <code>
+    # An integer assignment
+    age = 45
+  
+    # A floating point
+    salary = 1456.8
+  
+    # A string
+    name = "John"
+    </code>
+    <pre>
+  </section>
+  
+  <section id="If...else_Statement" class="main-section">
+    <header>If...else Statement</header>
+    <p>There comes situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code. Decision-making statements in programming languages decide the direction of the flow of program execution.</p>
+    <p>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.</p>
+    <pre>
+    <code>
+    i = 20
+    
+    if (i < 15):
+      print("i is smaller than 15")
+      print("i'm in if Block")
+      
+    else:
+      print("i is greater than 15")
+      print("i'm in else Block")
+    </code>
+    <pre>
+  </section>
+  
+  <section id="While_Statement" class="main-section">
+    <header>While Statement</header>
+    <p>Python While Loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed. While loop falls under the category of indefinite iteration. Indefinite iteration means that the number of times the loop is executed isn’t specified explicitly in advance.</p>
+    <p>Python uses indentation as its method of grouping statements. When a while loop is executed, expr is first evaluated in a Boolean context and if it is true, the loop body is executed. Then the expr is checked again, if it is still true then the body is executed again and this continues until the expression becomes false.</p>
+    <pre>
+    <code>
+    # Python program to illustrate
+    # while loop
+    
+    count = 0
+    
+    while (count < 3):
+      count = count + 1
+      print("Hello Geek")
+    </code>
+    <pre>
+  </section>
+  
+  <section id="For_Statement" class="main-section">
+    <header>For Statement</header>
+    <p>Python For loop is used for sequential traversal i.e. it is used for iterating over an iterable like string, tuple, list, etc. It falls under the category of definite iteration. Definite iterations mean the number of repetitions is specified explicitly in advance. In Python, there is no C style for loop. There is “for in” loop which is similar to for each loop in other languages. Let us learn how to use for in loop for sequential traversals. </p>
+    <p>Here the iterable is a collection of objects like lists, tuples. The indented statements inside the for loops are executed once for each item in an iterable. The variable var takes the value of the next item of the iterable each time through the loop.</p>
+    <pre>
+    <code>
+    # Python program to illustrate
+    # Iterating over a list
+    
+    print("List Iteration")
+    
+    l = ["geeks", "for", "geeks"]
+    
+    for i in l:
+      print(i)
+    </code>
+    <pre>
+  </section>
+  
+</main>
 
-      <li>"Ethiopians owe a great deal to the late Tilahun Gessesse, who promoted Ethiopian music around the world," said US Ambassador Donald Yamamoto.</li>
-              
-      <li>A state funeral was held on April 23. Around one million Ethiopians, including government officials and entertainers, gathered at Addis Ababa's Meskel Square to hear condolence speeches from the Prime Minister and President Girma Wolde-Giorgis.</li>
-    </ul>
+<nav id="navbar">
+  <a href="#Introduction"><header style="text-align: left;">Python<br>Documentation</header></a>
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <a class="nav-link" href="#Variables">Variables</a>
+  <a class="nav-link" href="#If...else_Statement">If...else Statement</a>
+  <a class="nav-link" href="#While_Statement">While Statement</a>
+  <a class="nav-link" href="#For_Statement">For Statement</a>
+</nav>
 
-    <h3>To read more about the great Dr. Tilahun Gessesse visit his <a target="_blank" href="https://en.wikipedia.org/wiki/Tilahun_Gessesse" id="tribute-link">Wikipedia entry.</a></h3>
-    </div> 
-  </div>
-</div>
     </body>
 </html>
